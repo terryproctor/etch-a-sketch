@@ -1,11 +1,18 @@
 console.log('start')
 
-boxAmount = 160;
+boxAmount = 169;
 
 for(x=0; x<=boxAmount;x++) { 
   var board = document.createElement('div');
-    board.className = "blah";
+    board.className = "box";
     document.getElementById('board').appendChild(board);
 }
 
-console.log(boxAmount)
+var mouseTarget = document.getElementsByClassName('box');
+
+document.querySelectorAll('.box').forEach(item => {
+    item.addEventListener('mouseout', event =>
+    {
+        
+    })
+})
