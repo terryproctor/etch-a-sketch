@@ -12,8 +12,8 @@
 .box {
     border: 1px solid darkgray;
     margin: none;
-    min-height:38px;
-        flex: 1 1 38px;
+    min-height:30px;
+        flex: 1 1 30px;
     background-color: white;
 }
 

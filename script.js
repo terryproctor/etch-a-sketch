@@ -1,4 +1,4 @@
-boxAmount = 169;
+boxAmount = 287;
 
 //create a board
 for(x=0; x<=boxAmount;x++) { 
