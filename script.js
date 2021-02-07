@@ -1,5 +1,3 @@
-console.log('start')
-
 boxAmount = 169;
 
 //create a board
@@ -9,12 +7,19 @@ for(x=0; x<=boxAmount;x++) {
     document.getElementById('board').appendChild(board);
 }
 
-var mouseTarget = document.getElementsByClassName('box');
-
+/*event listener plus function for each time it the mouse 
+enters that div it changes background color*/
 document.querySelectorAll('.box').forEach(item => {
-    item.addEventListener('mouseout', event =>
+    item.addEventListener('mouseenter', event =>
     {
         /*console.log('test')*/
         item.style.backgroundColor = 'red'
     })
 })
+
+const clearScreen = document.querySelector('#clear-btn')
+clearScreen.addEventListener('click', clear);
+
+function clear() {
+    document.querySelectorAll('.box').forEach(item => item.style.backgroundColor = 'white')  
+}
