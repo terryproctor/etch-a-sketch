@@ -1,9 +1,9 @@
-boxAmount = 287;
-color='red'
+let boxAmount = 287;
+let color='red';
 
 //create a board
 for(x=0; x<=boxAmount;x++) { 
-  var board = document.createElement('div');
+  let board = document.createElement('div');
     board.className = "box";
     document.getElementById('board').appendChild(board);
 }
